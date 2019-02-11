@@ -1,5 +1,11 @@
 body {
-  background-image: url("../images/option3.jpg");
+  background-image: url("../images/Breakfast-at-Tiffany.jpg");
+  text-align: center;
+  color: white;
+  font: weight;
+}
+h1 {
+  text-align: center;
 }
 
 .dia1 {
