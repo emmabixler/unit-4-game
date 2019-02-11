@@ -7,7 +7,7 @@ $(document).ready(function() {
   $("#losses").text(losses);
 
   var randomNumber = Math.floor(Math.random() * 102) + 19;
-  $(".numberGuess").text(randomNumber);
+  $("#numberGuess").text(randomNumber);
 
   var diamondOne = Math.floor(Math.random() * 12 + 1);
   var diamondTwo = Math.floor(Math.random() * 12 + 1);
@@ -17,7 +17,7 @@ $(document).ready(function() {
   function reset() {
     randomNumber = Math.floor(Math.random() * 102 + 19);
     console.log(randomNumber);
-    $(".numberGuess").text(randomNumber);
+    $("#numberGuess").text(randomNumber);
     var diamondOne = Math.floor(Math.random() * 12 + 1);
     var diamondTwo = Math.floor(Math.random() * 12 + 1);
     var diamondThree = Math.floor(Math.random() * 12 + 1);
