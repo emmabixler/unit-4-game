@@ -13,6 +13,9 @@ $(document).ready(function() {
   var diamondTwo = Math.floor(Math.random() * 12 + 1);
   var diamondThree = Math.floor(Math.random() * 12 + 1);
   var diamondFour = Math.floor(Math.random() * 12 + 1);
+  var diamondFive = Math.floor(Math.random() * 12 + 1);
+  var diamondSix = Math.floor(Math.random() * 12 + 1);
+  var diamondSeven = Math.floor(Math.random() * 12 + 1);
 
   function reset() {
     randomNumber = Math.floor(Math.random() * 102 + 19);
@@ -22,6 +25,9 @@ $(document).ready(function() {
     var diamondTwo = Math.floor(Math.random() * 12 + 1);
     var diamondThree = Math.floor(Math.random() * 12 + 1);
     var diamondFour = Math.floor(Math.random() * 12 + 1);
+    var diamondFive = Math.floor(Math.random() * 12 + 1);
+    var diamondSix = Math.floor(Math.random() * 12 + 1);
+    var diamondSeven = Math.floor(Math.random() * 12 + 1);
     total = 0;
     $("#score").text(total);
   }
@@ -69,6 +75,33 @@ $(document).ready(function() {
   });
   $("#pic4").on("click", function() {
     total = total + diamondFour;
+    $("#score").text(total);
+    if (total == randomNumber) {
+      yay();
+    } else if (total > randomNumber) {
+      loser();
+    }
+  });
+  $("#pic5").on("click", function() {
+    total = total + diamondFive;
+    $("#score").text(total);
+    if (total == randomNumber) {
+      yay();
+    } else if (total > randomNumber) {
+      loser();
+    }
+  });
+  $("#pic6").on("click", function() {
+    total = total + diamondSix;
+    $("#score").text(total);
+    if (total == randomNumber) {
+      yay();
+    } else if (total > randomNumber) {
+      loser();
+    }
+  });
+  $("#pic7").on("click", function() {
+    total = total + diamondSeven;
     $("#score").text(total);
     if (total == randomNumber) {
       yay();
