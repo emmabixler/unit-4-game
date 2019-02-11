@@ -45,7 +45,6 @@ $(document).ready(function() {
     reset();
   }
 
-  //set up click on picture
   $("#pic1").on("click", function() {
     total = total + diamondOne;
     $("#score").text(total);
